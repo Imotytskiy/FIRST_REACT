@@ -1,19 +1,22 @@
 import React from "react";
-import "./App.css";
 import Header from "./components/Header/Header";
-// import Navleft from "./components/Nav/Nav";
-// import Container from "./components/Container/Container";
+import Navleft from "./components/Nav/Navleft";
+import Container from "./components/Container/Container";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <Header />
+    <>
       <div>
-        {/* <Navleft /> */}
-        {/* <Container /> */}
+        <Header />
       </div>
-    </div>
+      <div className="container">
+        <Navleft />
+        <Container />
+      </div>
+    </>
   );
 }
 
 export default App;
+і;
