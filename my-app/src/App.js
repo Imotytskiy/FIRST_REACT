@@ -1,10 +1,17 @@
+import React from "react";
 import "./App.css";
-import User from "./components/UserComp";
+import Header from "./components/Header/Header";
+// import Navleft from "./components/Nav/Nav";
+// import Container from "./components/Container/Container";
+
 function App() {
   return (
     <div>
-      <h1>Hello</h1>
-      <User name="user name" comments={[1, 2, 3]} />
+      <Header />
+      <div>
+        {/* <Navleft /> */}
+        {/* <Container /> */}
+      </div>
     </div>
   );
 }
