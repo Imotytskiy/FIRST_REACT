@@ -2,7 +2,7 @@ import React from "react";
 import GoogleMapReact from "google-map-react";
 
 export default function Container({ selectedEventKey }) {
-  console.log("Selected event key:", selectedEventKey);
+  console.log(selectedEventKey);
 
   const cityCoordinates = {
     0: { lat: 50.4501, lng: 30.5234 },
