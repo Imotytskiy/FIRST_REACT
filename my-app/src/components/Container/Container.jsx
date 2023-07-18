@@ -6,11 +6,11 @@ export default function Container({ selectedEventKey }) {
 
   const cityCoordinates = {
     0: { lat: 50.4501, lng: 30.5234 },
-    2: { lat: 40.4501, lng: 30.5234 },
-    3: { lat: 30.4501, lng: 30.5234 },
-    4: { lat: 20.4501, lng: 30.5234 },
-    5: { lat: 10.4501, lng: 30.5234 },
-    6: { lat: 5.4501, lng: 30.5234 },
+    1: { lat: 52.52, lng: 13.405 },
+    2: { lat: 48.8566, lng: 2.3522 },
+    3: { lat: 40.4168, lng: -3.7038 },
+    4: { lat: 41.9028, lng: 12.4964 },
+    5: { lat: 52.2297, lng: 21.0122 },
   };
 
   const center = cityCoordinates[selectedEventKey] || {
@@ -23,7 +23,7 @@ export default function Container({ selectedEventKey }) {
       <GoogleMapReact
         bootstrapURLKeys={{ key: "" }}
         center={center}
-        defaultZoom={11}
+        defaultZoom={6}
       ></GoogleMapReact>
     </div>
   );
