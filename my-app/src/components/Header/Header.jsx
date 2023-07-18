@@ -18,7 +18,7 @@ const Header = () => {
     //converting the string into an array of single characters
     matrix = matrix.split("");
 
-    var font_size = 10;
+    var font_size = 14;
     var columns = c.width / font_size; //number of columns for the rain
     //an array of drops - one per column
     var drops = [];
@@ -33,7 +33,7 @@ const Header = () => {
       ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
       ctx.fillRect(0, 0, c.width, c.height);
 
-      ctx.fillStyle = "#F5F5F5"; //green text
+      ctx.fillStyle = "#F5F5F5";
       ctx.font = font_size + "px arial";
       //looping over drops
       for (var i = 0; i < drops.length; i++) {
@@ -60,20 +60,18 @@ const Header = () => {
 
   return (
     <header className="header">
-      <canvas id="c" ref={canvasRef}></canvas> {/* Added this line */}
+      <canvas id="c" ref={canvasRef}></canvas>
       <div className="header__wrapper">
         <h1 className="header__title">
           <strong>
             Hi, my name is <em>Ihor</em>
           </strong>
-          <br />a frontend developer
+          <br />
+          try to develop
         </h1>
         <div className="header__text">
           <p>with passion for learning and creating.</p>
         </div>
-        <a href="#!" className="btn">
-          Download CV
-        </a>
       </div>
     </header>
   );
