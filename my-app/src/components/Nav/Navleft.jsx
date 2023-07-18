@@ -6,15 +6,12 @@ function Navleft() {
   return (
     <Nav variant="pills" defaultActiveKey="/home" className="flex-column">
       <Nav.Link href="/home">Active</Nav.Link>
-      <Nav.Link eventKey="link-1">KYIV</Nav.Link>
-      <Nav.Link eventKey="link-2">BERLIN</Nav.Link>
-      <Nav.Link eventKey="link-3">PARIS</Nav.Link>
-      <Nav.Link eventKey="link-4">MADRID</Nav.Link>
-      <Nav.Link eventKey="link-5">ROME</Nav.Link>
-      <Nav.Link eventKey="link-6">WARSAWA</Nav.Link>
-      <Nav.Link eventKey="disabled" disabled>
-        Disabled
-      </Nav.Link>
+      <Nav.Link eventKey="0">KYIV</Nav.Link>
+      <Nav.Link eventKey="1">BERLIN</Nav.Link>
+      <Nav.Link eventKey="2">PARIS</Nav.Link>
+      <Nav.Link eventKey="3">MADRID</Nav.Link>
+      <Nav.Link eventKey="4">ROME</Nav.Link>
+      <Nav.Link eventKey="5">WARSAWA</Nav.Link>
     </Nav>
   );
 }
